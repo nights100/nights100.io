@@ -1,0 +1,99 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solar</title>
+  <style>
+    body {
+      background-color: #000000; /* Black background */
+      color: #ffffff; /* White text */
+      opacity: 0;
+      animation: fadeIn 2s forwards; /* Fading-in animation */
+      text-align: center; /* Center align all text */
+      overflow: hidden;
+      position: relative;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    h1 {
+      font-size: 36px;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(40), blink-caret 0.5s step-end infinite;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #ffffff;
+      }
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    a {
+      color: #ffffff; /* White link color */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    a:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+    
+    /* Space particles */
+    body::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background-image: radial-gradient(white 1px, transparent 0);
+      background-size: 3px 3px;
+      z-index: -1;
+      pointer-events: none;
+      animation: particles 8s infinite linear;
+    }
+    
+    @keyframes particles {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to <a href="https://example.com" target="_blank">Solar</a></h1>
+  <p>Commence Retribution.</p>
+  
+  <script>
+    window.onload = function() {
+      document.body.style.opacity = 1;
+    };
+  </script>
+</body>
+</html>
