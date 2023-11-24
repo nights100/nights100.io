@@ -55,10 +55,12 @@ html
     a {
       color: #ffffff; /* White link color */
       text-decoration: none; /* Remove underline */
+      transition: font-size 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
     }
     
     a:hover {
-      text-decoration: underline; /* Add underline on hover */
+      font-size: 40px; /* Increase font size */
+      text-decoration: underline; /* Add underline */
     }
     
     /* Space particles */
@@ -88,7 +90,7 @@ html
 </head>
 <body>
   <h1>Welcome to <a href="https://example.com" target="_blank">Solar</a></h1>
-  <p>Commence Retribution.</p>
+  <p>Solar is a Discord bot designed to enhance your server's experience.</p>
   
   <script>
     window.onload = function() {
@@ -97,3 +99,4 @@ html
   </script>
 </body>
 </html>
+
